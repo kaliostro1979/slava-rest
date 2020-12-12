@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1, user-scalable=0'>
     <title>Ресторан Слава</title>
+    <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
@@ -50,9 +51,12 @@
         </div>
         <div class="slider-main">
             <div id="header-slider" class="owl-carousel owl-height">
-                <div class="item" style="background-image: url('./assets/images/header-bgr.png')"></div>
-                <div class="item" style="background-image: url('./assets/images/header-bgr.png')"></div>
-                <div class="item" style="background-image: url('./assets/images/header-bgr.png')"></div>
+                <div class="item" data-dot="<button>01</button>"
+                     style="background-image: url('./assets/images/header-bgr.png')"></div>
+                <div class="item" data-dot="<button>02</button>"
+                     style="background-image: url('./assets/images/header-bgr.png')"></div>
+                <div class="item" data-dot="<button>03</button>"
+                     style="background-image: url('./assets/images/header-bgr.png')"></div>
             </div>
             <div class="slider-text">
                 <ul class="text-center">
@@ -75,7 +79,891 @@
 </header>
 
 <section>
+    <div class="container">
+        <div class="row second-sec-row">
+            <div class="col-lg-5">
+                <div class="second-sec-img">
 
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row p-5">
+                    <div class="col-lg-11">
+                        <div class="second-sec-text-title">
+                            <h1>Мы не просто готовим еду, мы дарим вам всплеск эмоций!</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="second-sec-text pt-4 pb-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci lma didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam wor quis nostrud exe rcitation ullamco
+                                laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor inci lma didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam wor quis
+                                nostrud exe rcitation ullamco laboris nisi ut aliquip </p>
+                        </div>
+                        <hr class="second-sec-divider">
+                        <div class="second-sec-reserve pt-2">
+                            <a href="#">забронировать столик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu-section">
+    <div class="menu-section_top">
+        <div class="menu_reservation_btn">
+            <a type="button">Резерв столика</a>
+        </div>
+        <div class="container">
+            <div class="menu_reservation-list">
+                <ul>
+                    <li class="active">
+                        <a type="button">Основное меню</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a type="button">Бизнес ланчи</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a type="button">Завтраки</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a type="button">Винная карта</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a type="button">Барное меню</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a type="button">Барное меню</a>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu-section-body">
+        <div class="full-menu">
+            <a href="#">полное меню</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="menu-slider owl-carousel owl-theme">
+                    <div class="menu-item" data-dot="<button>салаты</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-dot="<button>закуски</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-dot="<button>горячие закуски</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-dot="<button>горячие закуски</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-dot="<button>горячие закуски</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-dot="<button>горячие закуски</button>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="menu-box">
+                                        <div class="menu-box_img">
+                                            <img src="./assets/images/menu-box_img.png" alt="">
+                                        </div>
+                                        <div class="menu-box_title">
+                                            <span>
+                                                салат “слава”
+                                            </span>
+                                            <div class="menu-box_price">
+                                                <span>755</span>₽
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu-box_order">
+                                            <span>Lorem / Ipsum</span>
+                                            <a type="button">в корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="gallery">
+        <div class="container-fluid">
+            <div class="row gallery-row">
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="gallery-img">
+                        <img src="./assets/images/galler-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -83,6 +971,7 @@
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/owl.navigation.js"></script>
+<script src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

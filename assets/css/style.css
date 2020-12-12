@@ -27,7 +27,7 @@ body ul{
 /*Top header*/
 
 .top-header{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
@@ -294,4 +294,293 @@ body ul{
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
+}
+
+#header-slider .owl-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+
+.owl-dots .owl-dot {
+    margin: 0px 5px;
+}
+.owl-dots .owl-dot button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #555555;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.owl-dots .owl-dot button:focus {
+    outline: none;
+}
+.owl-dots .owl-dot.active button {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+/*Second Section*/
+
+.second-sec-row{
+    padding: 180px 0;
+}
+
+.second-sec-img{
+    height: 616px;
+    background-image: url('../images/sec-2-bgr.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second-sec-text-title h1{
+    line-height: 61px;
+    font-weight: 400;
+}
+
+.second-sec-text p{
+    font-size: 16px;
+    line-height: 32px;
+    color: #666666;
+}
+
+.second-sec-divider{
+    width: 30px;
+    height: 2px;
+    background-color: #111111;
+}
+
+.second-sec-reserve a{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+
+/*Menu Section*/
+
+.menu-section{
+    background-image: url("../images/menu-bgr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 100px;
+}
+
+.menu-section_top{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu_reservation_btn{
+    position: absolute;
+}
+
+.menu_reservation_btn a{
+    color: #ffffff;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+}
+
+.menu_reservation_btn a:hover{
+    color: #ffffff;
+}
+
+.menu_reservation-list{
+    display: flex;
+    justify-content: center;
+}
+
+.menu_reservation-list ul{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.menu_reservation-list ul li{
+    margin-right: 20px;
+}
+
+.menu_reservation-list ul hr{
+    margin: 0;
+    display: none;
+}
+
+.menu_reservation-list ul .active hr{
+    background: #ffffff;
+    width: 20%;
+    display: block;
+}
+
+
+.menu-section-body{
+    padding: 190px 0;
+    position: relative;
+}
+
+/*---Menu Slider Inner---*/
+
+.menu-item{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 80px 80px 50px;
+}
+
+.menu-box{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 12px 10px 12px 100px;
+    min-height: 90px;
+    background: #fff;
+    position: relative;
+}
+
+
+.menu-box_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+}
+
+.menu-box_title{
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.menu-box_title span{
+    padding: 0 5px 0 0;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.menu-box hr{
+    margin: 0;
+    position: relative;
+    border-bottom: 2px dotted;
+    width: 100%;
+    top: -18px;
+}
+
+.menu-box_price{
+    float: right;
+    background: #fff;
+    font-size: 16px;
+    padding: 0 0 0 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-box_order{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-box_order span{
+    color: #666666;
+    font-size: 14px;
+}
+
+.menu-box_order a{
+    padding: 5px 17px;
+    border: 1px solid #ebdec5;
+    font-size: 11px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #3f5828!important;
+    font-weight: 600;
+}
+
+.menu-slider .owl-dots button{
+    color: #cecece;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu-slider .owl-dots{
+    position: relative;
+    bottom: 560px;
+    width: 50%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-slider .owl-dots .owl-dot{
+    margin-right: 15px;
+}
+
+.menu-slider .owl-dots .owl-dot.active button {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-slider .owl-nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+}
+
+.menu-slider .owl-nav button:focus{
+    outline: none;
+}
+
+.menu-slider .owl-prev, .menu-slider .owl-next{
+    position: absolute;
+    top: -60px;
+}
+
+.menu-slider .owl-prev{
+    left: 250px;
+}
+
+.menu-slider .owl-next{
+    right: 250px;
+}
+
+.full-menu{
+    position: absolute;
+    left: 2vw;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.full-menu a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.full-menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/*Gallery*/
+
+.gallery-row{
+    padding: 290px 100px;
+}
+
+.gallery-img img{
+    width: 100%;
 }

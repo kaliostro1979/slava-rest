@@ -1,10 +1,44 @@
 $("#header-slider").owlCarousel({
     items: 1,
-    autoplay: true,
-    autoplayTimeout: 3000
+    dots: true,
+    dotsData: true,
 });
 
-let sliderMain = $('.slider-section')
+$('.menu-slider').owlCarousel({
+    items: 1,
+    nav: true,
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    dots: true,
+    dotsData: true,
+    callbacks: true,
+});
+
+$('.menu-slider').on('change', '.menu-slider .owl-dots .owl-dot > button', function initScroll(){
+    $(this).parent().parent('.owl-dots').mCustomScrollbar({
+        axis: "x",
+        mouseWheel: {enable: true},
+        theme: "light"
+    });
+})
+
+
+
+function initScroll(){
+    $('.menu-slider .owl-dots').mCustomScrollbar({
+        axis: "x",
+        mouseWheel: {enable: true},
+        theme: "light"
+    });
+}
+
+
+//initScroll();
+
+
+
+
+
+let sliderMain = $('.slider-section');
 
 sliderMain.on('mouseover', function () {
     $(this).addClass('slider-section-open');
@@ -30,3 +64,12 @@ sliderMain.on('mouseleave', function () {
 $('.first-button').on('click', function () {
     $('.animated-icon1').toggleClass('open');
 });
+
+
+
+$('.menu_reservation-list ul li').on('click', function () {
+    $('.menu_reservation-list ul li').removeClass('active');
+    $(this).addClass('active')
+});
+
+
