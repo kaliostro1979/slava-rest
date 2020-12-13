@@ -21,8 +21,6 @@ $('.menu-slider').on('change', '.menu-slider .owl-dots .owl-dot > button', funct
     });
 })
 
-
-
 function initScroll(){
     $('.menu-slider .owl-dots').mCustomScrollbar({
         axis: "x",
@@ -31,12 +29,7 @@ function initScroll(){
     });
 }
 
-
-//initScroll();
-
-
-
-
+initScroll();
 
 let sliderMain = $('.slider-section');
 
@@ -65,11 +58,34 @@ $('.first-button').on('click', function () {
     $('.animated-icon1').toggleClass('open');
 });
 
-
-
 $('.menu_reservation-list ul li').on('click', function () {
     $('.menu_reservation-list ul li').removeClass('active');
     $(this).addClass('active')
 });
+
+$('.gallery-img').on('mouseover', function(){
+    let data = $(this).attr('data')
+    $(this).find('.img-text span').text(data)
+    $(this).find('.img-text span').addClass('img-text-bordered ')
+});
+
+
+$('.gallery-img').on('mouseleave', function(){
+    $(this).find('.img-text span').text('')
+    $(this).find('.img-text span').removeClass('img-text-bordered ')
+});
+
+$('.anons-img').on('mouseover', function (){
+    $(this).find('.border-div').addClass('border-div-bordered')
+})
+
+$('.anons-img').on('mouseleave', function (){
+    $(this).find('.border-div').removeClass('border-div-bordered')
+})
+
+
+$('.datepicker').datepicker();
+
+
 
 
