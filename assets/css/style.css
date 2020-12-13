@@ -683,3 +683,74 @@ body ul{
     padding: 5%;
     border: 2px solid #FFFFFF;
 }
+
+.datepicker-main{
+    display: flex;
+}
+
+.datepicker-box{
+    width: 100%;
+}
+
+.datepicker-box input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ffffff;
+}
+
+.datepicker-box input:focus{
+    outline:none;
+}
+
+.date-icon{
+    margin-right: 2px;
+}
+
+.date-icon, .select-box-icon{
+    border: 1px solid #fff;
+    padding: 2% 5%;
+}
+
+.date-icon i{
+    color: #FFFFFF;
+}
+
+.datepicker-select-box{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.select-box-icon i{
+    color: #FFFFFF;
+}
+
+.select-box-wrapper{
+    width: 100%;
+}
+
+.select-box-wrapper .form-group{
+    margin-bottom: 0;
+}
+
+.select-box-wrapper .form-group select{
+    border: none;
+    border-radius: 0;
+    margin-left: 2px;
+}
+
+.datepicker-select-box .timepicker-wrapper, .datepicker-select-box .timepicker-wrapper input{
+    width: 100%;
+    height: 100%;
+}
+
+.datepicker-select-box .timepicker-wrapper input:focus{
+    outline: none;
+}
+
+.reserv-btn a{
+    color: #ffffff!important;
+    padding: 5%;
+    border: 2px solid #ffffff;
+    font-size: 12px;
+}

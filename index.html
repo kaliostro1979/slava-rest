@@ -6,9 +6,10 @@
     <title>Ресторан Слава</title>
     <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./assets/css/datepicker.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/mdtimepicker.min.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -1030,7 +1031,50 @@
     <div class="user-info_main">
         <div class="container">
             <div class="row">
-                <input data-provide="datepicker">
+                <div class="col-lg-3">
+                    <div class="datepicker-select-box">
+                        <div class="select-box-icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="select-box-wrapper">
+                            <div class="form-group">
+                                <select class="form-control" id="dateSelection">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="datepicker-main">
+                        <div class="date-icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="datepicker-box">
+                            <input data-toggle="datepicker">
+                            <div data-toggle="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="datepicker-select-box">
+                        <div class="select-box-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="timepicker-wrapper">
+                            <input type="text" id="timepicker"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="reserv-btn">
+                        <a type="submit">Забронировать</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1041,7 +1085,8 @@
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/owl.navigation.js"></script>
-<script src="./assets/js/bootstrap-datepicker.min.js"></script>
+<script src="./assets/js/mdtimepicker.min.js"></script>
+<script src="./assets/js/datepicker.min.js"></script>
 <script src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
