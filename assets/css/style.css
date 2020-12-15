@@ -31,8 +31,8 @@ body ul{
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
-    background-color: #000000;
-    transition: background-color 1s ease;
+    z-index: 10;
+    position: absolute;
 }
 
 .top-header-hovered{
@@ -86,16 +86,19 @@ body ul{
     text-decoration: underline;
 }
 
-.slider-section{
-    padding: 0;
+.slider-main{
     transition: 1s padding, width ease;
-    display: flex;
-
 }
 
-.slider-section-open{
-    padding: 0 6vw;
+.slider-section{
+    display: flex;
+    position: relative;
+}
+
+.slider-main-open{
+    padding: 5vw;
     transition: 1s padding, width ease;
+    position: relative;
 }
 
 
@@ -123,22 +126,19 @@ body ul{
 
 .slider-main{
     width: 100%;
-    transition: 1s height, 1s width ease;
+    /*transition: 1s height, 1s width ease;*/
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#header-slider{
-    height: 80vh;
-}
 
-.slider-section .slider-hovered{
+/*.slider-section .slider-hovered{
     height: 70vh;
     width: 90vw;
     transition: 1s height, 1s width ease;
-}
+}*/
 
 .slider-text{
     position: absolute;
@@ -169,9 +169,19 @@ body ul{
 .social{
     position: absolute;
     left: 2vw;
-    top: 50%;
-    opacity: 0;
-    transition: 0.5s opacity ease;
+    top: 40%;
+    z-index: 10;
+}
+
+.social ul li a, .reservation-text a{
+    color: #ffffff;
+    transition: 0.5s color ease;
+}
+
+
+.social-hovered ul li a, .reservation-text-hovered a{
+    color: #2a2926;
+    transition: 0.5s color ease;
 }
 
 .reservation-text{
@@ -181,7 +191,11 @@ body ul{
     top: 50%;
     text-transform: uppercase;
     transition: 0.5s opacity ease;
+    z-index: 10;
 }
+
+
+
 
 .social ul{
     list-style: none;
@@ -196,14 +210,28 @@ body ul{
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
+    position: absolute;
+    bottom: 40px;
+    color: #ffffff;
+    z-index: 10;
+    width: 100%;
+    transition: 0.5s color ease;
 }
 
-.header-info-section{
-    margin-top: 40px;
+.header-info-section-hovered, .header-info-section-hovered .tel-number a{
+    color: #000000;
+    transition: 0.5s color ease;
 }
+
+
 
 .header-info-section span{
     margin-left: 10px;
+}
+
+.tel-number a{
+    color: #ffffff;
+    transition: 0.5s color ease;
 }
 
 
@@ -293,22 +321,23 @@ body ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
 }
 
 #header-slider .owl-dots{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    position: absolute;
+    color: #ffffff;
+    bottom: 40px;
+    left: 48vw;
 }
 
-
-
-
-.owl-dots .owl-dot {
+#header-slider .owl-dots .owl-dot {
     margin: 0px 5px;
 }
-.owl-dots .owl-dot button {
+#header-slider .owl-dots .owl-dot button {
     background: none;
     border: none;
     padding: 0;
@@ -321,8 +350,12 @@ body ul{
     outline: none;
 }
 .owl-dots .owl-dot.active button {
-    color: #000000;
+    /*color: #000000;*/
     text-decoration: underline;
+}
+
+#header-slider .owl-dots .owl-dot button{
+    color: #eeeeee;
 }
 
 
@@ -366,31 +399,30 @@ body ul{
 
 /*Menu Section*/
 
+.menu-section-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .menu-section{
     background-image: url("../images/menu-bgr.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 100px;
-}
-
-.menu-section_top{
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
 }
 
+
 .menu_reservation_btn{
-    position: absolute;
+    width: 150px;
 }
 
 .menu_reservation_btn a{
-    color: #ffffff;
+    color: #ffffff!important;
     display: block;
     padding: 10px 15px;
     border: 1px solid #ffffff;
+    text-align: center;
 }
 
 .menu_reservation_btn a:hover{
@@ -400,6 +432,10 @@ body ul{
 .menu_reservation-list{
     display: flex;
     justify-content: center;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
 }
 
 .menu_reservation-list ul{
@@ -504,29 +540,48 @@ body ul{
     font-weight: 600;
 }
 
+.menu-slider-block .menu-slider{
+    display: none;
+}
+
+.menu-slider-block .menu-slider.active-slide{
+    display: block;
+}
+
 .menu-slider .owl-dots button{
-    color: #cecece;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background: none;
+    display: block;
+    position: relative;
 }
 
 .menu-slider .owl-dots{
-    position: relative;
+    position: absolute;
     bottom: 560px;
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
+    right: -13vw;
+    transform: rotate(90deg);
+    bottom: 50%;
 }
 
 .menu-slider .owl-dots .owl-dot{
-    margin-right: 15px;
+    padding: 10px;
 }
 
-.menu-slider .owl-dots .owl-dot.active button {
-    color: #ffffff;
-    text-decoration: none;
+.menu-slider .owl-dots .owl-dot.active button div {
+    width: 24px;
+    height: 1px;
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 6px;
+    left: -6px;
 }
 
 .menu-slider .owl-nav{
@@ -554,6 +609,26 @@ body ul{
 
 .menu-slider .owl-next{
     right: 250px;
+}
+
+.menu-categories_list{
+    width: 40%;
+    margin: 15px auto;
+}
+
+.menu-categories_list ul{
+    list-style: none;
+    display: flex;
+    width: max-content;
+    width: -moz-max-content;
+    margin: 15px auto;
+    justify-content: space-between;
+}
+
+.menu-categories_list ul li{
+    color: #ffffff;
+    margin-right: 15px;
+    text-transform: uppercase;
 }
 
 .full-menu{
@@ -621,6 +696,10 @@ body ul{
 
 /*Anons Section*/
 
+.event-section{
+    padding-bottom: 290px;
+}
+
 .anons-img{
     height: 210px;
     background-size: cover;
@@ -686,6 +765,7 @@ body ul{
 
 .datepicker-main{
     display: flex;
+    height: 100%;
 }
 
 .datepicker-box{
@@ -708,7 +788,7 @@ body ul{
 
 .date-icon, .select-box-icon{
     border: 1px solid #fff;
-    padding: 2% 5%;
+    padding: 10px 15px;
 }
 
 .date-icon i{
@@ -731,26 +811,106 @@ body ul{
 
 .select-box-wrapper .form-group{
     margin-bottom: 0;
+    height: 100%;
 }
 
 .select-box-wrapper .form-group select{
     border: none;
     border-radius: 0;
     margin-left: 2px;
+    height: 100%;
 }
 
 .datepicker-select-box .timepicker-wrapper, .datepicker-select-box .timepicker-wrapper input{
     width: 100%;
     height: 100%;
+    border: none;
+    margin-left: 1px;
 }
 
 .datepicker-select-box .timepicker-wrapper input:focus{
     outline: none;
 }
 
-.reserv-btn a{
-    color: #ffffff!important;
-    padding: 5%;
-    border: 2px solid #ffffff;
-    font-size: 12px;
+.reserv-btn{
+    width: 150px;
+}
+
+.reserv-btn, .reserv-btn button {
+    height: 100%;
+}
+
+.reserv-btn button{
+    padding: 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.reserv-btn button:focus{
+    outline: none;
+}
+
+
+/*Contact Us*/
+
+.contact-us-section{
+    padding: 120px 0;
+    position: relative;
+}
+
+.contacts-info h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.contacts-info ul{
+    list-style: none;
+}
+
+.contacts-info ul li{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contacts-address ul li{
+    padding-left: 30px;
+}
+
+.contacts-info ul i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.contacts-info ul li p{
+    margin: 0;
+}
+
+.contacts-info .map{
+    height: 300px;
+}
+
+.contacts-info .map iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.move-to-up{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -29px;
+    bottom: 40%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.move-to-up p{
+    margin: 0;
 }

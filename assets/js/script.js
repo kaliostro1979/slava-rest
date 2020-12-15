@@ -6,49 +6,51 @@ $("#header-slider").owlCarousel({
 
 $('.menu-slider').owlCarousel({
     items: 1,
-    nav: true,
-    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     dots: true,
-    dotsData: true,
-    callbacks: true,
+    dotsData: true
 });
 
-$('.menu-slider').on('change', '.menu-slider .owl-dots .owl-dot > button', function initScroll(){
-    $(this).parent().parent('.owl-dots').mCustomScrollbar({
-        axis: "x",
-        mouseWheel: {enable: true},
-        theme: "light"
-    });
-})
+$('.menu-categories_list ul li a').on('click', function () {
+    $('.menu-slider').removeClass('active-slide');
+    $('.menu-slider').each((i, e)=>{
+        if ($(this).attr('value') === $(e).attr('value')){
+            $(e).addClass('active-slide')
+        }
+    })
+});
 
-function initScroll(){
-    $('.menu-slider .owl-dots').mCustomScrollbar({
-        axis: "x",
-        mouseWheel: {enable: true},
-        theme: "light"
-    });
-}
+$('.menu-categories_list').mCustomScrollbar({
+    axis: "x",
+    mouseWheel: {enable: true},
+    theme: "light"
+});
 
-initScroll();
+/*$('.menu_reservation-list').mCustomScrollbar({
+    axis: "x",
+    mouseWheel: {enable: true},
+    theme: "light"
+});*/
 
-let sliderMain = $('.slider-section');
+let sliderMain = $('.slider-main');
 
 sliderMain.on('mouseover', function () {
-    $(this).addClass('slider-section-open');
-    $('.social').css({'opacity': 1});
-    $('.reservation-text').css({'opacity': 1});
-    $('.top-header').addClass('top-header-hovered')
-    $('.top-header_right').addClass('top-header_right_hovered')
+    $(this).addClass('slider-main-open');
+    $('.social').addClass('social-hovered');
+    $('.reservation-text').addClass('reservation-text-hovered');
+    $('.header-info-section').addClass('header-info-section-hovered');
+    $('.top-header').addClass('top-header-hovered');
+    $('.top-header_right').addClass('top-header_right_hovered');
     $('.logo_light').css({'opacity': 0});
     $('.logo_dark').css({'opacity': 1});
 });
 
 sliderMain.on('mouseleave', function () {
-    $(this).removeClass('slider-section-open');
-    $('.social').css({'opacity': 0});
-    $('.reservation-text').css({'opacity': 0});
+    $(this).removeClass('slider-main-open');
+    $('.social').removeClass('social-hovered');
+    $('.reservation-text').removeClass('reservation-text-hovered');
+    $('.header-info-section').removeClass('header-info-section-hovered');
     $('.top-header').removeClass('top-header-hovered');
-    $('.top-header_right').removeClass('top-header_right_hovered')
+    $('.top-header_right').removeClass('top-header_right_hovered');
     $('.logo_light').css({'opacity': 1});
     $('.logo_dark').css({'opacity': 0});
 });
@@ -64,14 +66,14 @@ $('.menu_reservation-list ul li').on('click', function () {
 });
 
 $('.gallery-img').on('mouseover', function(){
-    let data = $(this).attr('data')
-    $(this).find('.img-text span').text(data)
+    let data = $(this).attr('data');
+    $(this).find('.img-text span').text(data);
     $(this).find('.img-text span').addClass('img-text-bordered ')
 });
 
 
 $('.gallery-img').on('mouseleave', function(){
-    $(this).find('.img-text span').text('')
+    $(this).find('.img-text span').text('');
     $(this).find('.img-text span').removeClass('img-text-bordered ')
 });
 
@@ -107,6 +109,14 @@ $('[data-toggle="datepicker"]').datepicker({
 $('#timepicker').mdtimepicker({
     timeFormat:'hh:mm:ss.000',
     theme:'dark',
+});
+
+$('.reserv-btn button').on('click', function (event) {
+    event.preventDefault();
+});
+
+$('.move-to-up').on('click', function () {
+   $('html').animate({scrollTop:0}, 2000);
 });
 
 

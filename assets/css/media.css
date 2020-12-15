@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+}
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .move-to-up{
+        position: unset;
+        transform: unset;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .top-header{
+        padding: 0 20px;
+    }
+
+    .top-header_right ul{
+        display: none;
+    }
+
+    .slider-text ul li:nth-child(2) {
+        font-size: 3rem;
+    }
+
+    .social, .reservation-text, .header-info-section{
+        display: none;
+    }
+
+    #header-slider .owl-dots {
+        left: 45vw;
+    }
+
+    .second-sec-row {
+        padding: 80px 0;
+    }
+
+    .menu-item{
+        padding: 0;
+    }
+
+    .menu-section-container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .menu-section{
+        padding: 60px 0px;
+    }
+
+    .menu-section-body{
+        padding: 20px 0;
+    }
+
+    .menu-slider .owl-dots{
+        position: unset;
+        transform: unset;
+    }
+
+    .full-menu{
+        position: unset;
+        transform: unset;
+        padding-left: 30px;
+    }
+
+    .gallery-row {
+        padding: 50px 0;
+    }
+
+    .event-section {
+        padding-bottom: 50px;
+    }
+
+    .user-info-item{
+        margin-bottom: 15px;
+    }
+
+    .reserv-btn button{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .logo_dark{
+        display: none!important;
+    }
+
+    .logo_light{
+        display: block!important;
+        opacity: 1!important;
+    }
+
+    .menu_reservation_btn{
+        margin: 0 auto;
+    }
+
+    .menu_reservation-list{
+        margin-top: 20px;
+    }
+
+    .full-menu{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 580px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+@media only screen and (max-width: 340px) {
+
+}
+
+@media only screen and (min-width: 767px) {
+}
