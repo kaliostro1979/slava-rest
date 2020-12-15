@@ -590,6 +590,7 @@ body ul{
     position: absolute;
     top: 6px;
     left: -6px;
+    transform: rotate(90deg);
 }
 
 .menu-slider .owl-nav{
