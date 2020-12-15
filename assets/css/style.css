@@ -634,9 +634,14 @@ body ul{
 }
 
 .menu-categories_list ul li{
-    color: #ffffff;
+    color: #cecece;
     margin-right: 15px;
     text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu-categories_list ul .active-category{
+    color: #ffffff;
 }
 
 .full-menu{
@@ -784,6 +789,7 @@ body ul{
     height: 100%;
     width: 100%;
     border: 1px solid #ffffff;
+    text-indent: 15px;
 }
 
 .datepicker-box input:focus{
@@ -827,6 +833,10 @@ body ul{
     border-radius: 0;
     margin-left: 2px;
     height: 100%;
+}
+
+.timepicker-wrapper input{
+    text-indent: 15px;
 }
 
 .datepicker-select-box .timepicker-wrapper, .datepicker-select-box .timepicker-wrapper input{

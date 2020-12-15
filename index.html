@@ -176,7 +176,7 @@
                 <div class="col-lg-12 menu-slider-block">
                     <div class="menu-categories_list">
                         <ul>
-                            <li><a type="button" value="salads">салаты</a></li>
+                            <li class="active-category"><a type="button" value="salads">салаты</a></li>
                             <li><a type="button" value="snacks">закуски</a></li>
                             <li><a type="button" value="hot-snack">горячие закуски</a></li>
                             <li><a type="button" value="soup">супы</a></li>
@@ -3336,11 +3336,11 @@
                             <div class="select-box-wrapper">
                                 <div class="form-group">
                                     <select class="form-control" id="dateSelection">
+                                        <option value="choose-guests-count" selected disabled>Количество гостей</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
-                                        <option>5</option>
                                     </select>
                                 </div>
                             </div>
@@ -3352,7 +3352,7 @@
                                 <i class="far fa-calendar-alt"></i>
                             </div>
                             <div class="datepicker-box">
-                                <input data-toggle="datepicker">
+                                <input data-toggle="datepicker" placeholder="Выберите дату">
                                 <div data-toggle="datepicker"></div>
                             </div>
                         </div>
@@ -3363,7 +3363,7 @@
                                 <i class="far fa-clock"></i>
                             </div>
                             <div class="timepicker-wrapper">
-                                <input type="text" id="timepicker"/>
+                                <input type="text" id="timepicker" placeholder="Выберите время"/>
                             </div>
                         </div>
                     </div>

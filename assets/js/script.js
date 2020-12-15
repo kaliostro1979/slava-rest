@@ -33,6 +33,11 @@ $('.menu-categories_list').mCustomScrollbar({
     theme: "light"
 });
 
+$('.menu-categories_list ul li').on('click', function () {
+    $('.menu-categories_list ul li').removeClass('active-category')
+    $(this).addClass('active-category')
+})
+
 let sliderMain = $('.slider-main');
 
 
@@ -61,6 +66,8 @@ function changeScreen(){
 
 }
 
+changeScreen()
+
 
 $(window).resize(function () {
     if ($(window).width() <= 991){
@@ -71,17 +78,6 @@ $(window).resize(function () {
     }
 
 });
-
-/*$('.menu_reservation-list').mCustomScrollbar({
-    axis: "x",
-    mouseWheel: {enable: true},
-    theme: "light"
-});*/
-
-
-
-
-
 
 $('.first-button').on('click', function () {
     $('.animated-icon1').toggleClass('open');
