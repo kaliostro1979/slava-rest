@@ -173,7 +173,7 @@ body ul{
     z-index: 10;
 }
 
-.social ul li a, .reservation-text a{
+.social ul li a, .reservation-text a, .reservation-text a:hover{
     color: #ffffff;
     transition: 0.5s color ease;
 }
@@ -210,12 +210,13 @@ body ul{
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
-    position: absolute;
-    bottom: 40px;
+    position: relative;
+    bottom: 70px;
     color: #ffffff;
     z-index: 10;
     width: 100%;
     transition: 0.5s color ease;
+    left: 0;
 }
 
 .header-info-section-hovered, .header-info-section-hovered .tel-number a{
@@ -229,7 +230,7 @@ body ul{
     margin-left: 10px;
 }
 
-.tel-number a{
+.tel-number a, .tel-number a:hover{
     color: #ffffff;
     transition: 0.5s color ease;
 }
@@ -332,6 +333,12 @@ body ul{
     color: #ffffff;
     bottom: 40px;
     left: 48vw;
+    transition: left 1s ease;
+}
+
+.slider-main-open #header-slider .owl-dots{
+    left: 41vw;
+    transition: left 1s ease;
 }
 
 #header-slider .owl-dots .owl-dot {
@@ -433,7 +440,7 @@ body ul{
     display: flex;
     justify-content: center;
     padding: 10px 15px;
-    width: 100%;
+    width: 560px;
     margin: 0 auto;
     color: #ffffff;
 }
@@ -441,11 +448,12 @@ body ul{
 .menu_reservation-list ul{
     list-style: none;
     display: flex;
-    overflow: hidden;
 }
 
 .menu_reservation-list ul li{
     margin-right: 20px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .menu_reservation-list ul hr{

@@ -67,6 +67,11 @@
         transform: unset;
     }
 
+
+    .menu_reservation-list ul li{
+        white-space: nowrap;
+    }
+
     .full-menu{
         position: unset;
         transform: unset;
@@ -86,7 +91,7 @@
     }
 
     .reserv-btn button{
-        padding: 5px;
+        padding: 5px 20px;
         font-size: 14px;
     }
 
@@ -105,6 +110,7 @@
 
     .menu_reservation-list{
         margin-top: 20px;
+        width: 450px;
     }
 
     .full-menu{
