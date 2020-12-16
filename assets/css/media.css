@@ -86,6 +86,10 @@
         padding: 50px 0;
     }
 
+    .gallery{
+        padding: 0;
+    }
+
     .event-section {
         padding-bottom: 50px;
     }
