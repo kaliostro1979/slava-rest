@@ -382,7 +382,6 @@ body ul{
     outline: none;
 }
 .owl-dots .owl-dot.active button {
-    /*color: #000000;*/
     text-decoration: underline;
 }
 
@@ -479,6 +478,10 @@ body ul{
     margin-right: 20px;
     text-align: center;
     white-space: nowrap;
+}
+
+.menu_reservation-list ul li a, .menu-categories_list ul li a{
+    cursor: pointer;
 }
 
 .menu_reservation-list ul hr{
