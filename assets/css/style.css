@@ -79,7 +79,13 @@ body ul{
 }
 
 .top-header_right ul li:first-child a{
-    border-right: 1px solid #000;
+    border-right: 1px solid #ffffff;
+    transition: color 1s ease;
+}
+
+.top-header_right_hovered ul li:first-child a{
+    border-right: 1px solid #000000;
+    transition: color 1s ease;
 }
 
 .top-header_right ul li:first-child a{
@@ -93,11 +99,8 @@ body ul{
 .slider-section{
     display: flex;
     position: relative;
-
-    /*border: 0px solid #ffffff;*/
     -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
     box-shadow: inset 0px 0px 0px 0px #ffffff;
-    top: -24px;
 }
 
 .item{
@@ -679,14 +682,14 @@ body ul{
     justify-content: space-between;
 }
 
-.menu-categories_list ul li{
+.menu-categories_list ul li a{
     color: #cecece;
     margin-right: 15px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.menu-categories_list ul .active-category{
+.menu-categories_list ul .active-category a{
     color: #ffffff;
 }
 

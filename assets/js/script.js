@@ -12,13 +12,10 @@ $('.menu-slider').owlCarousel({
 
 
 
-$('.menu-categories_list ul li a').on('click', function () {
-    $('.menu-slider').removeClass('active-slide');
-    $('.menu-slider').each((i, e)=>{
-        if ($(this).attr('value') === $(e).attr('value')){
-            $(e).addClass('active-slide')
-        }
-    })
+$('.menu-categories_list ul li a').on('click', function (e) {
+    e.preventDefault();
+    $('.menu-slider').hide();
+   $("#"+$(this).attr('href')).show();
 });
 
 $('.menu_reservation-list').mCustomScrollbar({
