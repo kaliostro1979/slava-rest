@@ -38,38 +38,33 @@ $('.menu-categories_list ul li').on('click', function () {
     $(this).addClass('active-category')
 })
 
-let sliderMain = $('.slider-main');
+let sliderMain = $('.top-header');
 
 
-function changeScreen(){
-    sliderMain.on('mouseover', function () {
-        $(this).addClass('slider-main-open');
-        $('.social').addClass('social-hovered');
-        $('.reservation-text').addClass('reservation-text-hovered');
-        $('.header-info-section').addClass('header-info-section-hovered');
-        $('.top-header').addClass('top-header-hovered');
-        $('.top-header_right').addClass('top-header_right_hovered');
-        $('.logo_light').css({'opacity': 0});
-        $('.logo_dark').css({'opacity': 1});
-    });
+sliderMain.on('mouseover', function () {
+    $('.slider-main').addClass('slider-main-open');
+    $('.social').addClass('social-hovered');
+    $('.reservation-text').addClass('reservation-text-hovered');
+    $('.header-info-section').addClass('header-info-section-hovered');
+    $('.top-header').addClass('top-header-hovered');
+    $('.top-header_right').addClass('top-header_right_hovered');
+    $('.logo_light').css({'opacity': 0});
+    $('.logo_dark').css({'opacity': 1});
+});
 
-    sliderMain.on('mouseleave', function () {
-        $(this).removeClass('slider-main-open');
-        $('.social').removeClass('social-hovered');
-        $('.reservation-text').removeClass('reservation-text-hovered');
-        $('.header-info-section').removeClass('header-info-section-hovered');
-        $('.top-header').removeClass('top-header-hovered');
-        $('.top-header_right').removeClass('top-header_right_hovered');
-        $('.logo_light').css({'opacity': 1});
-        $('.logo_dark').css({'opacity': 0});
-    });
-
-}
-
-changeScreen()
+sliderMain.on('mouseleave', function () {
+    $('.slider-main').removeClass('slider-main-open');
+    $('.social').removeClass('social-hovered');
+    $('.reservation-text').removeClass('reservation-text-hovered');
+    $('.header-info-section').removeClass('header-info-section-hovered');
+    $('.top-header').removeClass('top-header-hovered');
+    $('.top-header_right').removeClass('top-header_right_hovered');
+    $('.logo_light').css({'opacity': 1});
+    $('.logo_dark').css({'opacity': 0});
+});
 
 
-$(window).resize(function () {
+/*$(window).resize(function () {
     if ($(window).width() <= 991){
 
     }
@@ -77,7 +72,7 @@ $(window).resize(function () {
         changeScreen()
     }
 
-});
+});*/
 
 $('.first-button').on('click', function () {
     $('.animated-icon1').toggleClass('open');
