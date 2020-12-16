@@ -86,18 +86,34 @@ body ul{
     text-decoration: underline;
 }
 
-.slider-main{
+/*.slider-main{
     transition: 1s padding, width ease;
-}
+}*/
 
 .slider-section{
     display: flex;
     position: relative;
+
+    /*border: 0px solid #ffffff;*/
+    -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    top: -24px;
+}
+
+.item{
+    transition: 1s box-shadow ease;
+}
+
+.header-slider-hovered .owl-dots .owl-dot button{
+    color: #000000!important;
+    transition: color 0.5s ease!important;
 }
 
 .slider-main-open{
-    padding: 5vw;
-    transition: 1s padding, width ease;
+    -webkit-box-shadow: inset 0px 0px 0px 120px #ffffff;
+    box-shadow: inset 0px 0px 0px 120px #ffffff;
+    /*border: 100px solid #ffffff;*/
+    transition: 1s box-shadow ease;
     position: relative;
 }
 
@@ -173,7 +189,7 @@ body ul{
 .social{
     position: absolute;
     left: 2vw;
-    top: 40%;
+    top: 50%;
     z-index: 10;
 }
 
@@ -192,7 +208,7 @@ body ul{
     position: absolute;
     right: -2vw;
     transform: rotate(90deg);
-    top: 50%;
+    top: 48%;
     text-transform: uppercase;
     transition: 0.5s opacity ease;
     z-index: 10;
@@ -214,7 +230,7 @@ body ul{
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
-    position: relative;
+    position: absolute;
     bottom: 70px;
     color: #ffffff;
     z-index: 10;
@@ -498,7 +514,7 @@ body ul{
 
 
 .menu-section-body{
-    padding: 190px 0;
+    padding: 85px 0 150px;
     position: relative;
 }
 
@@ -695,9 +711,10 @@ body ul{
 
 /*Gallery*/
 
-.gallery-row{
-    padding: 290px 100px;
+.gallery{
+    padding: 150px 100px;
 }
+
 
 .gallery-img img{
     width: 100%;
@@ -740,7 +757,7 @@ body ul{
 /*Anons Section*/
 
 .event-section{
-    padding-bottom: 290px;
+    padding: 145px 0;
 }
 
 .anons-img{
@@ -903,8 +920,11 @@ body ul{
 /*Contact Us*/
 
 .contact-us-section{
-    padding: 120px 0;
     position: relative;
+}
+
+.footer{
+    padding: 120px 0;
 }
 
 .contacts-info h3{
@@ -952,7 +972,7 @@ body ul{
     position: absolute;
     transform: rotate(90deg);
     right: -29px;
-    bottom: 40%;
+    bottom: 20%;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 14px;

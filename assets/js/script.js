@@ -42,7 +42,7 @@ let sliderMain = $('.top-header');
 
 
 sliderMain.on('mouseover', function () {
-    $('.slider-main').addClass('slider-main-open');
+    $('.item').addClass('slider-main-open');
     $('.social').addClass('social-hovered');
     $('.reservation-text').addClass('reservation-text-hovered');
     $('.header-info-section').addClass('header-info-section-hovered');
@@ -50,18 +50,20 @@ sliderMain.on('mouseover', function () {
     $('.top-header_right').addClass('top-header_right_hovered');
     $('.address').addClass('address-open');
     $('.tel-number').addClass('tel-number-open');
+    $('#header-slider').addClass('header-slider-hovered')
     $('.logo_light').css({'opacity': 0});
     $('.logo_dark').css({'opacity': 1});
 });
 
 sliderMain.on('mouseleave', function () {
-    $('.slider-main').removeClass('slider-main-open');
+    $('.item').removeClass('slider-main-open');
     $('.social').removeClass('social-hovered');
     $('.reservation-text').removeClass('reservation-text-hovered');
     $('.header-info-section').removeClass('header-info-section-hovered');
     $('.address').removeClass('address-open');
     $('.tel-number').removeClass('tel-number-open');
     $('.top-header').removeClass('top-header-hovered');
+    $('#header-slider').removeClass('header-slider-hovered')
     $('.top-header_right').removeClass('top-header_right_hovered');
     $('.logo_light').css({'opacity': 1});
     $('.logo_dark').css({'opacity': 0});
