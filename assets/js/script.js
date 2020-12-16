@@ -80,7 +80,12 @@ $('.gallery-img').on('mouseover', function(){
     let data = $(this).attr('data');
     $(this).find('.img-text span').text(data);
     $(this).find('.img-text span').addClass('img-text-bordered ')
+    $(this).find('img').css({'opacity': 0.6})
 });
+
+$('.gallery-img').on('mouseleave', function () {
+    $(this).find('img').css({'opacity': 1})
+})
 
 
 $('.gallery-img').on('mouseleave', function(){
@@ -90,10 +95,12 @@ $('.gallery-img').on('mouseleave', function(){
 
 $('.anons-img').on('mouseover', function (){
     $(this).find('.border-div').addClass('border-div-bordered')
+    $(this).find('.overlay').addClass('overlay-show')
 })
 
 $('.anons-img').on('mouseleave', function (){
     $(this).find('.border-div').removeClass('border-div-bordered')
+    $(this).find('.overlay').removeClass('overlay-show')
 })
 
 
