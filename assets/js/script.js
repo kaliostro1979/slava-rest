@@ -48,6 +48,8 @@ sliderMain.on('mouseover', function () {
     $('.header-info-section').addClass('header-info-section-hovered');
     $('.top-header').addClass('top-header-hovered');
     $('.top-header_right').addClass('top-header_right_hovered');
+    $('.address').addClass('address-open');
+    $('.tel-number').addClass('tel-number-open');
     $('.logo_light').css({'opacity': 0});
     $('.logo_dark').css({'opacity': 1});
 });
@@ -57,6 +59,8 @@ sliderMain.on('mouseleave', function () {
     $('.social').removeClass('social-hovered');
     $('.reservation-text').removeClass('reservation-text-hovered');
     $('.header-info-section').removeClass('header-info-section-hovered');
+    $('.address').removeClass('address-open');
+    $('.tel-number').removeClass('tel-number-open');
     $('.top-header').removeClass('top-header-hovered');
     $('.top-header_right').removeClass('top-header_right_hovered');
     $('.logo_light').css({'opacity': 1});
