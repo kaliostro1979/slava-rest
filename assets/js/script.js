@@ -68,16 +68,6 @@ sliderMain.on('mouseleave', function () {
 });
 
 
-/*$(window).resize(function () {
-    if ($(window).width() <= 991){
-
-    }
-    else {
-        changeScreen()
-    }
-
-});*/
-
 $('.first-button').on('click', function () {
     $('.animated-icon1').toggleClass('open');
 });

@@ -210,7 +210,7 @@ body ul{
 }
 
 
-/*.header-info-section{
+.header-info-section{
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
@@ -221,31 +221,32 @@ body ul{
     width: 100%;
     transition: 0.5s color ease;
     left: 0;
-}*/
+    bottom: 60px;
+}
 
-/*.header-info-section-hovered, .header-info-section-hovered .tel-number a{
+.header-info-section-hovered, .header-info-section-hovered .tel-number a{
     color: #000000;
     transition: 0.5s color ease;
-}*/
+}
 
 
-.address, .tel-number{
+/*.address, .tel-number{
     display: inline-block;
     position: relative;
     bottom: 66px;
     color: #ffffff;
     z-index: 1;
-}
+}*/
 
-.address{
+/*.address{
     padding-left: 55px;
     float: left;
 }
 
 .tel-number{
     padding-right: 55px;
-    float: right;
-}
+    !*float: right;*!
+}*/
 
 .address-open, .tel-number-open, .tel-number-open a{
     color: #000000!important;
@@ -356,7 +357,7 @@ body ul{
     margin-top: 40px;
     position: absolute;
     color: #ffffff;
-    bottom: 40px;
+    bottom: 70px;
     left: 48vw;
     transition: left 1s ease;
 }
@@ -464,7 +465,7 @@ body ul{
     display: flex;
     justify-content: center;
     padding: 10px 15px;
-    width: 560px;
+    /*width: 560px;*/
     margin: 0 auto;
     color: #ffffff;
 }
