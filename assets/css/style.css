@@ -1157,11 +1157,21 @@ body ul{
 }
 
 .about-us-list-text .divider{
-    width: 40px;
-    height: 2px;
-    background: #000000;
+    padding: 22px 25px;
+    background-color: #f8f8f8;
+    margin-right: 30px;
+    position: relative;
     display: block;
-    margin: 0 20px;
+}
+
+.about-us-list-text .divider:before{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    right: -20%;
 }
 
 .feedback-block{
