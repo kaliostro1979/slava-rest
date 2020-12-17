@@ -926,7 +926,7 @@ body ul{
 }
 
 .footer{
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .contacts-info h3{
@@ -974,7 +974,7 @@ body ul{
     position: absolute;
     transform: rotate(90deg);
     right: -29px;
-    bottom: 20%;
+    bottom: 13%;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 14px;
@@ -1061,6 +1061,34 @@ body ul{
     position: relative;
 }
 
-.other-page-footer .move-to-up{
-    bottom: 40%;
+
+/*MIni footer*/
+
+.mini-footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 70px;
+}
+
+.footer-logo{
+    width: 117px;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+.footer-social ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer-social ul li{
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+.footer-social ul li a{
+    color: #313131;
 }
