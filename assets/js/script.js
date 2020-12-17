@@ -18,6 +18,13 @@ $('.menu-categories_list').mCustomScrollbar({
     theme: "light"
 });
 
+$('.welcome-parallax').parallax(
+    {
+        imageSrc: '../assets/images/au-bgr.png',
+        naturalWidth: 1920,
+    }
+    );
+
 /*End of Plugins*/
 
 

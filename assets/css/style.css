@@ -1092,3 +1092,132 @@ body ul{
 .footer-social ul li a{
     color: #313131;
 }
+
+
+/*About US page*/
+
+.about-us-header{
+    background-color: #1a211b;
+}
+
+.about-us-header ol{
+    margin: 0;
+}
+
+.about-us-photo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-block{
+    padding: 150px 0;
+}
+
+.welcome-title h1{
+    font-weight: 700;
+}
+
+.signature p{
+    font-family: 'Boutique Free';
+    font-size: 45px;
+    margin: 0;
+}
+
+.welcome-parallax{
+    min-height: 500px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.welcome-parallax .parallax-text p{
+    text-transform: uppercase;
+}
+
+.welcome-parallax .parallax-text h1{
+    font-weight: 700;
+}
+
+.about-us-list-text{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.about-us-list-text .divider{
+    width: 40px;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: 0 20px;
+}
+
+.feedback-block{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.comment-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comment-text{
+    background: #f8f8f8;
+    padding: 8% 5%;
+    margin: 0 auto;
+}
+
+.comment-author{
+    position: relative;
+}
+
+.comment-author p{
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+}
+
+.comment-author p::before{
+    content: '';
+    width: 1px;
+    height: 70px;
+    background-color: #000000;
+    position: absolute;
+    left: 50%;
+    top: -85px;
+}
+
+.author-role{
+    text-transform: uppercase;
+}
+
+/*.comment-divider{
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #111111;
+    left: 45%;
+    transform: rotate(90deg);
+    top: -58%;
+}*/
+
+.photo-frame{
+    width: 90%;
+    height: 90%;
+    border: 3px solid #ffffff;
+    opacity: 0.2;
+}
