@@ -242,13 +242,12 @@ body ul{
     justify-content: space-between;
     padding: 0 120px;
     position: absolute;
-    bottom: 70px;
+    bottom: 45px;
     color: #ffffff;
     z-index: 10;
     width: 100%;
     transition: 0.5s color ease;
     left: 0;
-    bottom: 60px;
 }
 
 .hovered .header-info-section, .hovered .header-info-section .tel-number a{
@@ -397,6 +396,10 @@ body ul{
 
 #header-slider .owl-dots .owl-dot button{
     color: #eeeeee;
+}
+
+.hovered #header-slider .owl-dots .owl-dot button{
+    color: #555555;
 }
 
 
