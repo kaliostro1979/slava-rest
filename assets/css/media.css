@@ -34,7 +34,7 @@
         box-shadow: inset 0px 0px 0px 0px #ffffff;
     }
 
-    .hovered .burger-navigation-btn{
+    .hovered .home-nav-btn{
         color: #ffffff;
     }
 
@@ -120,11 +120,15 @@
         font-size: 14px;
     }
 
-    .logo_dark{
+    .hovered .logo_dark{
+        display: block!important;
+    }
+
+    .hovered .logo_dark-home{
         display: none!important;
     }
 
-    .logo_light{
+    .hovered .logo_light-home{
         display: block!important;
         opacity: 1!important;
     }
