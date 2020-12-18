@@ -18,12 +18,6 @@ $('.menu-categories_list').mCustomScrollbar({
     theme: "light"
 });
 
-$('.welcome-parallax').parallax(
-    {
-        imageSrc: '../assets/images/au-bgr.png',
-        naturalWidth: 1920,
-    }
-    );
 
 /*End of Plugins*/
 
@@ -139,14 +133,22 @@ $('.move-to-up').on('click', function () {
 /*Burger menu*/
 
 $('.burger-navigation-btn').on('click', function () {
-    $('.burger-menu').addClass('burger-menu-open')
+    $('.burger-menu').addClass('burger-menu-open');
     $('html body').addClass('menu-open')
-})
 
-$('.burger-menu-close-btn').on('click', function () {
+});
+
+$('.burger-close-btn').on('click', function () {
+    $('.burger-menu').removeClass('burger-menu-open');
+    $('html body').removeClass('menu-open')
+});
+
+$('.burger-right ul li a').on('click', function (e) {
     $('.burger-menu').removeClass('burger-menu-open')
     $('html body').removeClass('menu-open')
-})
+});
+
+
 
 
 

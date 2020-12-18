@@ -1,5 +1,11 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
+    .burger-left{
+        width: 100%;
+    }
 
+    .burger-menu_logo{
+        left: 1%;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {
@@ -10,7 +16,9 @@
 }
 
 @media only screen and (max-width: 1025px) {
-
+    .burger-left{
+        width: 100%;
+    }
     .move-to-up{
         position: unset;
         transform: unset;
@@ -20,6 +28,15 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+    .hovered .item{
+        -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+        box-shadow: inset 0px 0px 0px 0px #ffffff;
+    }
+
+    .hovered .burger-navigation-btn{
+        color: #ffffff;
+    }
 
     .top-header{
         padding: 0 20px;
@@ -118,11 +135,33 @@
 
     .menu_reservation-list{
         margin-top: 20px;
-        /*width: 450px;*/
     }
 
     .full-menu{
         text-align: center;
+    }
+
+    /*Burger Menu*/
+    .burger-left-block{
+        display: none;
+    }
+
+
+    .burger-left{
+        display: none;
+    }
+
+    .burger-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .burger-right ul{
+        text-align: center;
+        font-size: 50px;
     }
 
 }

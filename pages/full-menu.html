@@ -16,15 +16,97 @@
     <link rel="stylesheet" href="../assets/css/mdtimepicker.min.css">
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/burger-menu.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/media.css">
 </head>
 <body>
 
 <div class="burger-menu">
-    <button class="burger-menu-close-btn">
-        <i class="far fa-window-close"></i>
-    </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 burger-left-block">
+                <div class="burger-menu_logo pt-5 pl-5 pb-5">
+                    <img src="../assets/images/logo_white.png" alt="">
+                </div>
+                <div class="burger-left">
+                    <div class="burger-left-inner">
+                        <div class="burger-contact-info">
+                            <h3>Контакты</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Москва, ул. Вятская 27, стр.7 </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <a href="tel:+7(968)8110077">+ 7(968) 811 00 77</a>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <a href="mailto:info@slava-rest.ru">info@slava-rest.ru</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="burger-working-hours">
+                            <h3>Рабочие часы</h3>
+                            <ul>
+                                <li>
+                                    <span>Понедельник -Пятница</span><span>12am - 10pm</span>
+                                </li>
+                                <li>
+                                    <span class="week-days">Суббота - воскресенье</span><span>12am - 03pm</span>
+                                </li>
+                                <li>
+                                    <span>Открыты все выходные и праздники</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light border-0 pl-4" id="burger-full_name" aria-describedby="emailHelp" placeholder="Как вас зовут?">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-light border-0 pl-4" id="burger-user_email" placeholder="Ваш email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-light border-0 pl-4" aria-label="With textarea" placeholder="Сообщение"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right bg-dark border-0">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 burger-right-block">
+                <div class="row">
+                    <div class="burger-control p-5">
+                        <div class="burger-social">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="burger-close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-right p-5">
+                    <ul>
+                        <li><a href="./about-us.html">О ресторане</a></li>
+                        <li><a href="./full-menu.html">Меню</a></li>
+                        <li><a href="#">Ивенты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Атмосфера</a></li>
+                        <li><a href="./contact-us.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <header class="hovered">
@@ -39,14 +121,7 @@
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
             </ul>
             <div class="burger-navigation-btn">
-                <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent20"
-                        aria-controls="navbarSupportedContent20" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <div class="animated-icon1">
-                        <span></span><span></span><span></span>
-                    </div>
-                </button>
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </div>
@@ -311,13 +386,13 @@
 </footer>
 
 
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/owl.carousel.min.js"></script>
-<script src="../assets/js/owl.navigation.js"></script>
-<script src="../assets/js/mdtimepicker.min.js"></script>
-<script src="../assets/js/datepicker.min.js"></script>
-<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/plugins/jquery-3.5.1.min.js"></script>
+<script src="../assets/js/plugins/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/owl.carousel.min.js"></script>
+<script src="../assets/js/plugins/owl.navigation.js"></script>
+<script src="../assets/js/plugins/mdtimepicker.min.js"></script>
+<script src="../assets/js/plugins/datepicker.min.js"></script>
+<script src="../assets/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../assets/js/script.js"></script>
 </body>
 </html>
