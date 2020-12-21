@@ -1273,3 +1273,8 @@ body ul{
     background-color: #ffffff;
     padding: 0 10px;
 }
+
+.datepicker-select-box .select-box-wrapper .form-group .form-control:focus{
+    outline: none!important;
+    box-shadow: unset!important;
+}
