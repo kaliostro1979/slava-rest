@@ -856,7 +856,7 @@ body ul{
 
 .date-icon, .select-box-icon{
     border: 1px solid #fff;
-    padding: 10px 15px;
+    padding: 15px 20px;
 }
 
 .date-icon i{
@@ -1025,8 +1025,8 @@ body ul{
 }
 
 .filter-row .form-control{
-    border: 2px solid #3b4a2e;
-    border-radius: unset;
+    border: 2px solid #3b4a2e!important;
+    border-radius: unset!important;
 }
 
 .filter-row .form-control:focus{
@@ -1249,4 +1249,27 @@ body ul{
 
 .contact-us-form .form-control:focus{
     box-shadow:unset;
+}
+
+
+.select-box-wrapper .form-group select, .filter-row .form-control{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../images/chevron.png");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 23px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    background-size: 14px 8px;
+}
+
+.filter-row .form-control{
+    background-position-y: 14px;
+    background-color: #ffffff;
+    padding: 0 10px;
 }
